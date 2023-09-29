@@ -1,0 +1,5 @@
+Track,Matcher,Type,Macro Precision (P),Macro Recall (R),Residual Macro Recall (R+),Macro F1,Micro Precision (P),Micro Recall (R),Residual Micro Recall (R+),Micro F1,"# of TP","# of Residual TP","# of FP","# of FN","# of Correspondences",Total Runtime,Total Runtime (HH:MM:SS)
+LocalTrack,/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz,ALL,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1155,1516,1155,17331881614,00:00:17
+LocalTrack,/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz,CLASSES,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1153,0,1153,-,-
+LocalTrack,/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz,PROPERTIES,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,2,0,2,-,-
+LocalTrack,/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz,INSTANCES,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,-,-

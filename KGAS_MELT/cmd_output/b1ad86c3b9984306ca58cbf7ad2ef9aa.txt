@@ -1,0 +1,33 @@
+2023-08-02 21:31:26 INFO  MeltUtil             - Welcome to
+ __  __ ______ _   _______ 
+|  \/  |  ____| | |__   __|
+| \  / | |__  | |    | |   
+| |\/| |  __| | |    | |   
+| |  | | |____| |____| |   
+|_|  |_|______|______|_|    3.2-SNAPSHOT (git commit 7165d2b)
+2023-08-02 21:31:26 INFO  Track                - Track cache folder is: /home/ec2-user/oaei_track_cache
+Recognized MELT WEB DOCKER package:
+/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz
+2023-08-02 21:31:26 INFO  Main                 - Please make sure that docker is running on your system.
+2023-08-02 21:31:33 INFO  MatcherDockerFile    - Connected to docker machine: ip-172-31-85-191.ec2.internal
+2023-08-02 21:31:33 INFO  MatcherDockerFile    - Load docker image from file /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz to docker local registry. If image is already there, use constructor MatcherDockerFile(String imageName).
+2023-08-02 21:31:37 INFO  MatcherDockerFile    - Starting container from image logmap-lite-melt-oaei-2021-web (port 8080 from container is mapped to port 44067 in host)
+2023-08-02 21:31:38 INFO  MatcherDockerFile    - Container started with id 20a645a168ecc26d4aac982efda853ceeee26a469f36c5d2a909f34e3b2559c7
+2023-08-02 21:31:38 INFO  Main                 - Running matching systems...
+2023-08-02 21:31:38 INFO  ExecutionRunner      - Running matcher /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz on testcase Local TC (track LocalTrack).
+2023-08-02 21:31:39 INFO  MatcherHTTPCall      - Execute now the following HTTP request: POST http://localhost:44067/match HTTP/1.1
+2023-08-02 21:31:40 INFO  RetryExec            - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:44067: Broken pipe (Write failed)
+2023-08-02 21:31:40 INFO  MatcherHTTPCall      - Endpoint is not ready / an exception occurred. Waiting 10 seconds. Trial 1/5
+2023-08-02 21:31:40 INFO  DockerLogCallback    - STDOUT: 2023-08-02 21:31:40 INFO  [main                          ] 169  in log                  - Logging initialized @1283ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-08-02 21:31:40 INFO  DockerLogCallback    - STDOUT: 2023-08-02 21:31:40 INFO  [main                          ] 82   in Main                 - Matching service runs at: http://localhost:8080/match
+2023-08-02 21:31:40 INFO  DockerLogCallback    - STDOUT: 2023-08-02 21:31:40 INFO  [main                          ] 375  in Server               - jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_212-b04
+2023-08-02 21:31:40 INFO  DockerLogCallback    - STDOUT: 2023-08-02 21:31:40 INFO  [main                          ] 916  in ContextHandler       - Started o.e.j.s.ServletContextHandler@5b87ed94{/,null,AVAILABLE}
+2023-08-02 21:31:40 INFO  DockerLogCallback    - STDOUT: 2023-08-02 21:31:40 INFO  [main                          ] 331  in AbstractConnector    - Started ServerConnector@3cbbc1e0{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-08-02 21:31:40 INFO  DockerLogCallback    - STDOUT: 2023-08-02 21:31:40 INFO  [main                          ] 415  in Server               - Started @1894ms
+2023-08-02 21:31:50 INFO  MatcherHTTPCall      - Execute now the following HTTP request: POST http://localhost:44067/match HTTP/1.1
+2023-08-02 21:31:50 INFO  DockerLogCallback    - STDOUT: 2023-08-02 21:31:50 INFO  [qtp1856426318-12              ] 109  in Main                 - Got multipart request - start matching
+2023-08-02 21:31:51 INFO  DockerLogCallback    - STDOUT: 2023-08-02 21:31:51 INFO  [qtp1856426318-12              ] 216  in Main                 - Server starts matcher class uk.ac.city.logmap.melt.LogMapLite_MELT for task:
+Source:file:/tmp/MELT-fileupload1600826975889182620/source-1821667045899961.owl
+Target:file:/tmp/MELT-fileupload1600826975889182620/target-1027433844685381196.owl
+InputAlignment:null
+Parameter:null

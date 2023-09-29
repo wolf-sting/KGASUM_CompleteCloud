@@ -1,0 +1,67 @@
+2023-08-02 12:35:15 INFO  MeltUtil             - Welcome to
+ __  __ ______ _   _______ 
+|  \/  |  ____| | |__   __|
+| \  / | |__  | |    | |   
+| |\/| |  __| | |    | |   
+| |  | | |____| |____| |   
+|_|  |_|______|______|_|    3.2-SNAPSHOT (git commit 7165d2b)
+2023-08-02 12:35:15 INFO  Track                - Track cache folder is: /home/ec2-user/oaei_track_cache
+Recognized MELT WEB DOCKER package:
+/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz
+2023-08-02 12:35:15 INFO  Main                 - Please make sure that docker is running on your system.
+2023-08-02 12:35:17 INFO  MatcherDockerFile    - Connected to docker machine: ip-172-31-85-191.ec2.internal
+2023-08-02 12:35:17 INFO  MatcherDockerFile    - Load docker image from file /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz to docker local registry. If image is already there, use constructor MatcherDockerFile(String imageName).
+2023-08-02 12:35:22 INFO  MatcherDockerFile    - Starting container from image logmap-lite-melt-oaei-2021-web (port 8080 from container is mapped to port 42833 in host)
+2023-08-02 12:35:23 INFO  MatcherDockerFile    - Container started with id c1a0b0e42ac9dd99c4a53bc6d51fd8f5d37b4b74a978c3b2de97ab8498e72215
+2023-08-02 12:35:23 INFO  Main                 - Running matching systems...
+2023-08-02 12:35:23 INFO  ExecutionRunner      - Running matcher /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz on testcase Local TC (track LocalTrack).
+2023-08-02 12:35:24 INFO  DockerLogCallback    - STDOUT: 2023-08-02 12:35:24 INFO  [main                          ] 169  in log                  - Logging initialized @925ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-08-02 12:35:25 ERROR MatcherURL           - Tool Exception!
+java.io.FileNotFoundException: /home/ec2-user/MELT_KGAS/uploads/54377bb35ff1ae0e9737447cbdb482c4.owl (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1165)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.http.MatcherHTTPCall.match(MatcherHTTPCall.java:145)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.http.MatcherHTTPCall.match(MatcherHTTPCall.java:129)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.docker.MatcherDockerFile.match(MatcherDockerFile.java:279)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:52)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:35)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval.ExecutionRunner.runMatcher(ExecutionRunner.java:62)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval.Executor.run(Executor.java:193)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval_client.Main.main(Main.java:195)
+2023-08-02 12:35:25 ERROR ExecutionRunner      - Exception during matching (matcher /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz on testcase Local TC).
+eu.sealsproject.platform.res.tool.api.ToolException: Tool exception
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:55)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:35)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval.ExecutionRunner.runMatcher(ExecutionRunner.java:62)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval.Executor.run(Executor.java:193)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval_client.Main.main(Main.java:195)
+Caused by: java.io.FileNotFoundException: /home/ec2-user/MELT_KGAS/uploads/54377bb35ff1ae0e9737447cbdb482c4.owl (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1165)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.http.MatcherHTTPCall.match(MatcherHTTPCall.java:145)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.http.MatcherHTTPCall.match(MatcherHTTPCall.java:129)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.docker.MatcherDockerFile.match(MatcherDockerFile.java:279)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:52)
+	... 4 more
+2023-08-02 12:35:25 INFO  ExecutionRunner      - Running matcher /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz on testcase Local TC (track LocalTrack) completed in 1 second.
+2023-08-02 12:35:25 ERROR ExecutionRunner      - Matching task unsuccessful: output alignment equals null. (matcher: /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz testcase: Local TC track: LocalTrack)
+2023-08-02 12:35:25 INFO  Main                 - Evaluating matching system results...
+2023-08-02 12:35:25 INFO  DockerLogCallback    - STDOUT: 2023-08-02 12:35:25 INFO  [main                          ] 82   in Main                 - Matching service runs at: http://localhost:8080/match
+2023-08-02 12:35:25 INFO  DockerLogCallback    - STDOUT: 2023-08-02 12:35:25 INFO  [main                          ] 375  in Server               - jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_212-b04
+2023-08-02 12:35:25 INFO  DockerLogCallback    - STDOUT: 2023-08-02 12:35:25 INFO  [main                          ] 916  in ContextHandler       - Started o.e.j.s.ServletContextHandler@5b87ed94{/,null,AVAILABLE}
+2023-08-02 12:35:25 INFO  DockerLogCallback    - STDOUT: 2023-08-02 12:35:25 INFO  [main                          ] 331  in AbstractConnector    - Started ServerConnector@3cbbc1e0{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-08-02 12:35:25 INFO  DockerLogCallback    - STDOUT: 2023-08-02 12:35:25 INFO  [main                          ] 415  in Server               - Started @1666ms
+2023-08-02 12:35:26 INFO  EvaluatorCSV         - Writing alignment cube
+Results written to: /home/ec2-user/KGAS_MELT/results/17f2accffc18d63126f868ae3d45da3d
+2023-08-02 12:35:26 INFO  MatcherDockerFile    - JVM shutdown detected and container c1a0b0e42ac9dd99c4a53bc6d51fd8f5d37b4b74a978c3b2de97ab8498e72215 is shut down now. Please call close method of MatcherDockerFile to remove this message.
+2023-08-02 12:35:26 INFO  MatcherDockerFile    - Shutdown completed.

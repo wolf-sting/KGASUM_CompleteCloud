@@ -1,0 +1,13 @@
+2023-08-02 12:32:38 INFO  MeltUtil             - Welcome to
+ __  __ ______ _   _______ 
+|  \/  |  ____| | |__   __|
+| \  / | |__  | |    | |   
+| |\/| |  __| | |    | |   
+| |  | | |____| |____| |   
+|_|  |_|______|______|_|    3.2-SNAPSHOT (git commit 7165d2b)
+2023-08-02 12:32:38 INFO  Track                - Track cache folder is: /home/ec2-user/oaei_track_cache
+Recognized MELT WEB DOCKER package:
+/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz
+2023-08-02 12:32:38 INFO  Main                 - Please make sure that docker is running on your system.
+2023-08-02 12:32:40 INFO  HttpRequestRetryExec - Recoverable I/O exception (java.io.IOException) caught when processing request to {}->unix://localhost:2375
+2023-08-02 12:32:40 WARN  MatcherDockerFile    - No connection to docker could be established. Check if docker is running on your machine.

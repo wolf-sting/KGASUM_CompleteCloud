@@ -1,0 +1,5 @@
+Track,Test Case,Matcher,Type,Precision (P),Recall (R),Residual Recall (R+),F1,"# of TP","# of FP","# of FN","# of Correspondences",Time,Time (HH:MM:SS)
+LocalTrack,Local TC,/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz,ALL,0.0,0.0,0.0,0.0,0,1155,1516,1155,17331881614,00:00:17
+LocalTrack,Local TC,/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz,CLASSES,0.0,0.0,0.0,0.0,0,1153,0,1153,-,-
+LocalTrack,Local TC,/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz,PROPERTIES,0.0,0.0,0.0,0.0,0,2,0,2,-,-
+LocalTrack,Local TC,/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz,INSTANCES,0.0,0.0,0.0,0.0,0,0,0,0,-,-

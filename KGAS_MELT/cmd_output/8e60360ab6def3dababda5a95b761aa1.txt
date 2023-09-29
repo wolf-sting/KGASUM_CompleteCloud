@@ -1,0 +1,62 @@
+2023-08-02 12:38:22 INFO  MeltUtil             - Welcome to
+ __  __ ______ _   _______ 
+|  \/  |  ____| | |__   __|
+| \  / | |__  | |    | |   
+| |\/| |  __| | |    | |   
+| |  | | |____| |____| |   
+|_|  |_|______|______|_|    3.2-SNAPSHOT (git commit 7165d2b)
+2023-08-02 12:38:22 INFO  Track                - Track cache folder is: /home/ec2-user/oaei_track_cache
+Recognized MELT WEB DOCKER package:
+/home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz
+2023-08-02 12:38:22 INFO  Main                 - Please make sure that docker is running on your system.
+2023-08-02 12:38:24 INFO  MatcherDockerFile    - Connected to docker machine: ip-172-31-85-191.ec2.internal
+2023-08-02 12:38:24 INFO  MatcherDockerFile    - Load docker image from file /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz to docker local registry. If image is already there, use constructor MatcherDockerFile(String imageName).
+2023-08-02 12:38:26 INFO  MatcherDockerFile    - Starting container from image logmap-lite-melt-oaei-2021-web (port 8080 from container is mapped to port 34501 in host)
+2023-08-02 12:38:27 INFO  MatcherDockerFile    - Container started with id a45c16b746bb03386f52ada8773c24e84d35965d88d824693ccf624c1388f343
+2023-08-02 12:38:27 INFO  Main                 - Running matching systems...
+2023-08-02 12:38:27 INFO  ExecutionRunner      - Running matcher /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz on testcase Local TC (track LocalTrack).
+2023-08-02 12:38:28 ERROR MatcherURL           - Tool Exception!
+java.io.FileNotFoundException: /home/ec2-user/MELT_KGAS/uploads/84284ba90f14895b39501f54b2dcfb8a.owl (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1165)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.http.MatcherHTTPCall.match(MatcherHTTPCall.java:145)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.http.MatcherHTTPCall.match(MatcherHTTPCall.java:129)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.docker.MatcherDockerFile.match(MatcherDockerFile.java:279)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:52)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:35)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval.ExecutionRunner.runMatcher(ExecutionRunner.java:62)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval.Executor.run(Executor.java:193)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval_client.Main.main(Main.java:195)
+2023-08-02 12:38:28 ERROR ExecutionRunner      - Exception during matching (matcher /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz on testcase Local TC).
+eu.sealsproject.platform.res.tool.api.ToolException: Tool exception
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:55)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:35)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval.ExecutionRunner.runMatcher(ExecutionRunner.java:62)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval.Executor.run(Executor.java:193)
+	at de.uni_mannheim.informatik.dws.melt.matching_eval_client.Main.main(Main.java:195)
+Caused by: java.io.FileNotFoundException: /home/ec2-user/MELT_KGAS/uploads/84284ba90f14895b39501f54b2dcfb8a.owl (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1165)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.http.MatcherHTTPCall.match(MatcherHTTPCall.java:145)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.http.MatcherHTTPCall.match(MatcherHTTPCall.java:129)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.external.docker.MatcherDockerFile.match(MatcherDockerFile.java:279)
+	at de.uni_mannheim.informatik.dws.melt.matching_base.MatcherURL.align(MatcherURL.java:52)
+	... 4 more
+2023-08-02 12:38:28 INFO  ExecutionRunner      - Running matcher /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz on testcase Local TC (track LocalTrack) completed in 1 second.
+2023-08-02 12:38:28 ERROR ExecutionRunner      - Matching task unsuccessful: output alignment equals null. (matcher: /home/ec2-user/KGAS_MELT/matchers/logmap-lite-melt-oaei-2021-web-latest.tar.gz testcase: Local TC track: LocalTrack)
+2023-08-02 12:38:28 INFO  Main                 - Evaluating matching system results...
+2023-08-02 12:38:29 INFO  DockerLogCallback    - STDOUT: 2023-08-02 12:38:29 INFO  [main                          ] 169  in log                  - Logging initialized @1906ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-08-02 12:38:30 INFO  EvaluatorCSV         - Writing alignment cube
+Results written to: /home/ec2-user/KGAS_MELT/results/8e60360ab6def3dababda5a95b761aa1
+2023-08-02 12:38:30 INFO  MatcherDockerFile    - JVM shutdown detected and container a45c16b746bb03386f52ada8773c24e84d35965d88d824693ccf624c1388f343 is shut down now. Please call close method of MatcherDockerFile to remove this message.
+2023-08-02 12:38:30 INFO  MatcherDockerFile    - Shutdown completed.
